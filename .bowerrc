@@ -1,0 +1,6 @@
+{
+    "directory": "assets/bower",
+    "proxy": "http://web-proxy.americas.hpqcorp.net:8080",
+    "https-proxy": "http://web-proxy.americas.hpqcorp.net:8080",
+    "strict-ssl": false
+}

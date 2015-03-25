@@ -1,0 +1,35 @@
+[
+  '{{repeat(15)}}',
+  {
+    create: { '_id': '{{index()}}', '_type': 'member' },
+    id: '{{objectId()}}',
+    name: '{{firstName()}} {{surname()}}',
+    email: '{{email()}}',
+    age: '{{integer(20, 40)}}',
+    phone: '+1 {{phone()}}',
+    'image': 'http://lorempixel.com/168/168/cats/',
+    suggestions: { input: ['{{repeat(4)}}',
+                  '{{random("c++", "python", "javascript", "shell", "java", "ruby", "erlang", "lisp", "golang", "android", "ios", "swift", "ionic") }}'
+                          ],output: '{{random("Web Developer", "iOS Developer", "Android Developer", "Enterprise App Developer", "Cool Hacker Guy")}}',
+                  weight: '{{integer(1, 13)}}',
+                 payload: {'id': '{{index()}}' }}
+
+  }
+]
+
+
+[
+  '{{repeat(5000)}}',
+  {
+    create: { '_id': '{{index()}}', '_type': 'member' },
+    id: '{{objectId()}}',
+    name: '{{firstName()}} {{surname()}}',
+    email: '{{email()}}',
+    age: '{{integer(20, 40)}}',
+    phone: '+1 {{phone()}}',
+    image: 'http://lorempixel.com/168/168/people/{{integer(1, 10)}}',
+    description: '{{lorem(200, "words")}}',
+    technologies: '{{random("c", "python", "javascript", "shell", "java", "ruby", "erlang", "lisp", "golang", "android", "ios", "swift", "ionic", "delphi", "php", "laravel", "assembly") }} {{random("c", "python", "javascript", "shell", "java", "ruby", "erlang", "lisp", "golang", "android", "ios", "swift", "ionic", "delphi", "php", "laravel", "assembly") }} {{random("c", "python", "javascript", "shell", "java", "ruby", "erlang", "lisp", "golang", "android", "ios", "swift", "ionic", "delphi", "php", "laravel", "assembly") }}'
+
+  }
+]

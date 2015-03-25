@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<link rel="stylesheet" href="/assets/bower/semantic-ui/dist/semantic.min.css">
+		<script src="assets/bower/jquery/dist/jquery.min.js"></script>
+		<script src="assets/bower/semantic-ui/dist/semantic.min.js"></script>
+		<script src="assets/bower/elasticsearch/elasticsearch.min.js"></script>
+		<script src="node_modules/react/dist/react-with-addons.js"></script>
+		<style>
+		body {
+			background-color: #efefef;
+			height: 100vh;
+		}
+		.grid {
+			margin-top: 140px;
+		}
+		/*.uk-panel-box {
+			border:1px solid #ccc;
+			border-radius:6px;
+			margin:60px 0px;
+		}*/
+		.search-input {
+			margin:40px auto 20px;
+		}
+		.product-detail {
+			margin:30px 0px;
+		}
+		.product-img {
+			img {
+				width: 100%;
+			}
+		}
+		.each-field {
+			font-size: 24px;
+			margin:10px 0px;
+		}
+		.two-col {
+			text-align: left;
+			font-size: 24px;
+			margin:20px 0px;
+		}
+		.two-col > div {
+			padding-left: 0px;
+		}
+		#react_elastic_search {
+			padding:20px;
+			padding-bottom: 30px;
+		}
+
+		.search-results > div {
+			margin-top: 30px;
+			padding-top: 30px !important;
+		}
+
+		.technologies {
+			margin:10px 0px;
+		}
+		.label.red{
+			font-weight: normal;
+		}
+
+		</style>
+	</head>
+	<body>
+		<div class="ui grid">
+			<div class="eight wide column centered grid">
+				<div class="ui segment">
+					<div class="two column centered row">
+						<div id="react_elastic_search"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/react-elastic-search.js"></script>
+</html>
